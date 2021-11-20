@@ -50,7 +50,7 @@
         <!--Hello, my name Sergey-->
         <scene sceneID="3uE-pX-I0r">
             <objects>
-                <viewController id="Rps-SA-OHt" sceneMemberID="viewController">
+                <viewController id="Rps-SA-OHt" customClass="ViewController2" customModule="ResumeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iuI-Dw-alV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +64,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="33"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="but2:" destination="CNZ-Dz-deW" eventType="touchUpInside" id="jKL-A6-fZh"/>
                                     <segue destination="1B0-bS-ML9" kind="show" id="rAG-tK-Bjc"/>
                                 </connections>
                             </button>
@@ -84,8 +85,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hello, my name Sergey" id="mVn-WQ-hRf"/>
+                    <connections>
+                        <outlet property="but2" destination="Cd1-wY-fpa" id="oIQ-9H-y2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWV-PK-gAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CNZ-Dz-deW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1704" y="37"/>
         </scene>
